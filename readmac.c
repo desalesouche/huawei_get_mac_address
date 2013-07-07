@@ -21,7 +21,7 @@ extern void huawei_oem_rapi_streaming_function(int n, int p1, int p2, int p3, in
 
 unsigned char *read_mac() {
 {
-	char mac_param[128];
+    char mac_param[128];
     char x[6];
     int y;
 
@@ -31,5 +31,5 @@ unsigned char *read_mac() {
     ALOGI("huawei_oem_rapi_streaming_function %p %x %x",x,x[1],y);
     sprintf(mac_param,"mac_param=%02X:%02X:%02X:%02X:%02X:%02X",x[5],x[4],x[3],x[2],x[1],x[0]);
     ALOGI("Got MAC Address: %s ",mac_param);
-	return x;
+    return x;
 }
